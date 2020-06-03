@@ -48,7 +48,7 @@ ul.main li{
     float:left;
 }
 
-ul.main li a{
+ul.main li a,span.home{
     display: block;
     color: white;
     text-align: center;
