@@ -1,0 +1,251 @@
+body.main{
+    background-image:url('photos/stadium.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body.first{
+    background-color: blanchedalmond;
+}
+
+.foot{
+    width:100px;
+    height:100px;
+    top:25px;
+    left:25px;
+
+}
+
+.maindiv{
+    position: sticky;
+    top:0;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.main, .first{
+    margin: 0;
+    padding: 0;
+}
+
+h1.main, h3.main{
+    background-color: black;
+    color: blanchedalmond;
+    width:100%;
+    text-align: center;
+    padding:5px;
+}
+
+ul.main{
+  background-color: #fa7507;
+  list-style-type: none;
+  overflow: hidden;
+  margin:0;
+  padding:0;
+}
+
+ul.main li{
+    float:left;
+}
+
+ul.main li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a:hover{background-color:#c2700e;}
+
+@media(max-width:300px){
+    ul.main li{
+        float: none;
+        width: 100%;
+    }
+    div.fixed{
+        width:100px;
+    }
+    div.fixed a,label{font-size: 10px;}
+    input[type="submit"],input[type="reset"]{
+        margin-left: 0;
+        font-size: 7px;
+    }
+}
+
+@media(max-width:500px){
+table.messi,table.ronaldo{
+    float: none;
+    margin: auto;
+    clear: both;
+    margin-bottom: 5px;
+    }
+ol{font-size: 12px;}
+div.lst{
+    clear: both;
+    float: left;
+    margin: auto;
+}
+ul.main,p,td,th,b{font-size: 10px;}
+    h1{font-size: 15px;}
+    h2{font-size: 13px;}
+    h3{font-size: 12px;}
+}
+
+form{
+    text-align: center;
+    background-color: #fa7507;
+    border:2px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+textarea{ 
+    background-color: #222;
+    color:#ccc;
+}
+
+input{
+    margin: 10px;
+    width: 50%;
+    background-color: #222;
+    color:#ccc;
+}
+
+input[type="checkbox"]:hover,label[for="box"]:hover{cursor: pointer;}
+
+input[type="submit"],input[type="reset"]:hover{cursor: pointer;}
+
+.submit{
+    margin: auto;
+}
+
+.world,.messipho,.ronaldopho{
+    margin:auto;
+    width:25%;
+    height:25%;
+    display: block;
+    border: 2px solid black;
+}
+
+.winnertable{margin-bottom: 50px;}
+
+.winnertable , .winnertable td, .winnertable th{
+    border-collapse: collapse;
+    margin:auto;
+    Padding: 5px;
+    border: 2px solid #111;
+    text-align: center;
+}
+video{
+    width: 100%;
+    height: 40%;
+}
+.winnertable th{background-color: #fa7507;}
+.winnertable td{width: 16%;}
+.winnertable tr:hover {background-color: #fa7507;}
+
+video{z-index:0}
+
+h1.last{
+    text-align: center;
+    border: 3px outset orange;
+    width: 25%;
+    border-radius: 10px;
+    border-width:5px;
+    margin: auto;
+    clear: both;
+}
+
+.messi,.ronaldo{
+    width:42%;
+    margin:1%;
+}
+
+.ronaldopho{float: right; height: 300px;}
+
+.messipho{float: left; height: 300px;}
+
+.ronaldo tr:hover{background-color: blue;}
+
+.messi tr:hover{background-color: red;}
+
+.messi,.ronaldo,.messi th,.ronaldo th,.messi td,.ronaldo td{
+    border-collapse: collapse;
+    border: 2px solid #111;
+    text-align: center;
+}
+
+.winnertable{margin-bottom: 50px;}
+
+.messi{
+    float: left;
+    margin-bottom: 50px;
+}
+
+.ronaldo{
+    float: right;
+    margin-bottom: 50px;
+}
+
+.ronaldo th{background-color: blue;}
+
+.messi th{background-color: red;}
+
+p{line-height: 25px;}
+
+.fixed{
+    width:150px;
+    position: fixed;
+    right:0;
+    bottom:0;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:#fa7507;
+}
+
+.fixed a{
+    color: #fff;
+    text-decoration: none;
+}
+
+form input{
+    width: 85%;
+    font-size: 75%;
+}
+
+input[type="submit"],input[type="reset"]{width:auto;}
+
+.col10{width: 10%;}
+
+.col15{width: 15%;}
+
+.col16{width:16.666667%}
+
+.col20{width: 20%;}
+
+.col22{width: 22%;}
+
+.col25{width: 25%;}
+
+.col33{width: 33.333%;}
+
+.col40{width: 40%;}
+
+.col45{width: 45%;}
+
+.col50{width: 50%;}
+
+.col66{width: 66.667%;}
+
+.col75{width: 75%;}
+
+.col80{width: 80%;}
+
+.col85{width: 85%;}
+
+.col90{width: 90%;}
+
+.col95{width: 95%;}
+
+.col100{width: 100%;}

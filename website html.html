@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="website css.css" type="text/css">
+        <title>scoregoal</title>
+        <script type="text/javascript"> 
+            function login() {  
+                var v = document.getElementById("pass").value; 
+                var x = document.getElementById("phone").value; 
+                if ( v[0].match(/[A-Z]/g) &&
+                v.match(/[0-9]/g) && !v.match(/[" "]/g) && v.match(/[^a-zA-Z\d]/g) && v.length === 8
+                && x[0].match(/[0]/g) && x.length === 11 && !x.match(/[A-Z]/g) && !x.match(/[a-z]/g)
+                && !x.match(/[" "]/g) && !x.match(/[^a-zA-Z\d]/g)){
+                    return; 
+                }
+                else if(!v[0].match(/[A-Z]/g))
+                alert("First letter of password must be capital");
+                else if(!v.match(/[0-9]/g))
+                alert("The password must contain number");
+                else if(v.match(/[" "]/g))
+                alert("The password must not contain space");
+                else if(v.length != 8)
+                alert("Password length must be 8 characters");
+                else if(!v.match(/[^a-zA-Z\d]/g))
+                alert("Password must contain special charcter");
+                else if(!x[0].match(/[0]/g))
+                alert("Phone number must begin with zero");
+                else if(x.length != 11)
+                alert("Phone number length must be 11 characters");
+                else if(x.match(/[A-Z]/g) || x.match(/[a-z]/g) || x.match(/[" "]/g) || x.match(/[^a-zA-Z\d]/g))
+                alert("Phone number must contain numbers only");
+            } 
+        </script> 
+    </head>
+    <body class="main">
+        <div class="maindiv">
+        <h1 class="main">Welcome to scoregoal</h1>
+        <h3 class="main">Home of football</h3>
+        <ul class="main">
+            <li class="col20"><a href="website html.html">Home</a></li>
+            <li class="col20"><a href="world cup winners.html">World cup</a></li>  
+            <li class="col20"><a href="Ballon dor winners.html">Ballon d'Or</a></li>
+            <li class="col20"><a href="Puskas winners.html">Puskás Award</a></li>
+            <li class="col20"><a href="CR7 VS LM10.html">Ronaldo vs Messi</a></li>
+        </ul></div>
+        <form action="/action_page.php" style="float:left; margin-right: 20%;" name="signin" class="col20">
+            <h2 style="text-align:center; font-family: 'Courier New', Courier, monospace;">Have an account?</h2><br>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+            <input type="submit" value="sign in">
+        </form>
+        <form action="login.html" name="signup" class="col22">
+            <h2 style="text-align:center; font-family: 'Courier New', Courier, monospace;">Create new account</h2><br>
+            <table>
+                    <input type="text" id="fname" name="fname" placeholder="First name" required>
+                    <input type="text" id="lname" name="lname" placeholder="Last name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="pass" name="password" placeholder="Password" required>
+                        <input list="gender" name="gender" id="gender" placeholder="Gender" required>
+                        <datalist id="gender">
+                            <option value="male">
+                            <option value="female">
+                        </datalist>
+                    <input type="text" id="address" name="address" placeholder="Address" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+            <input type="checkbox" id="box" style="width:auto" required><label for="box">Agreed to terms and conditions</label><br>
+             <input type="submit" value="sign up" onclick="login()">
+             <input type="reset">
+        </form>
+    </body>
+</html>
